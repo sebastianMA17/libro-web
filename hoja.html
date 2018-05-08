@@ -1,73 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Ingreso Al Parqueadero</title>
     <link rel="stylesheet" href="formulario.css">
-	<header>
-    <center><h1><b><i>PARKINGDOM</i></b></h1></center>
-     </header>
+    <script type="text/javascript" src="funciones.js"></script>
 </head>
-    
-    
+      
 <body>
+    <header>
+        <center><article class="imagen"><img src="http://hotelvillavicencioplaza.com/wp-content/uploads/2017/03/parqueadero.jpg" alt="logo"/></article> <h1><b><i>PARKINGDOM</i></b></h1></center>  
+    </header>
+    <fieldset>
+        <tr><td colspan="5" class="titulotabla" ></td></tr>
+        <legend><th>Ingreso de vehículos<th></legend>
+
+        <aside>
+            <table border="2">
+                <caption>Informacion.</caption>
+                <tr>
+                    <th>DATOS</th>
+                </tr>
+                <tr>
+                    <td><strong>INGRESAR PLACA:</strong> resgitra en base de datos el "ingreso"</td>
+                </tr>
+                <tr>
+                    <td><strong>FECHAS:</strong> muestra fecha de entrada y hora de parqueo</td>
+                </tr>
+                <tr>
+                    <td><strong>REGISTRO NUEVO:</strong> registro nuevo de ingreso</td>
+                </tr>
+                <tr>
+                    <td><strong>GUARDAR:</strong> guarda registro para contabilizacion</td>
+                </tr>
+            </table>    
+        </aside>
+        <section>    
+            <table>
+                <tr><td>Ingrese placa:    <br>
+                <INPUT type="text" name="placa" placeholder="Ingrese placa" id="placa" required></td></tr>     
+	
+                <tr><td>Numero de cedula: <br>
+                <INPUT type="number" number="cedula" id="cedulaa" placeholder="Cedula" required></td></tr>
+                
+                <tr><td>Tipo de Documento:<br>
+                <select name="tipodedocumento" size="1" id="tipodedocumento" required > 
+                <option value="1">Cédula de Ciudadanía</option>
+                <option value="2">tarjeta de identidad</option>
+                <option value="3">Cédula de Extranjería</option>
+                <option value="7">NIT</option></select></td></tr>
+                
+	            <tr><td> Tipo Vehiculo   :  
+                <select name="tipovehiculo" id="tipovehiculo" required>
+                <option value=1>Automovil</option>
+                <option value=2>Motocicleta</option>
+                <option value=3>Otro</option></select></td></tr>
     
-  <form action="registro vehiculo.php" method="post" id="registro" >
-<tr><td colspan="2" class="titulotabla">
-     
- <fieldset>
-     <legend>Ingreso de vehículos</legend
-</td></tr>
-
-<table>
-	<tr><td>
-      <strong>Ingrese placa :</strong><br>
-      <INPUT type="text" name="placa" placeholder="Ingrese placa" id="placa" required>     
-	</td><td>
-    <strong>Numero de cedula:</strong><br>
-      <INPUT type="number" number="cedula" id="cedulaa" placeholder="Cedula" required>
-          </td></tr><tr><td>
-      <strong> Tipo de Documento: </strong><br> 
-      <select name="tipodedocumento" SIZE="1" id="tipodedocumento" required > 
-        <option value="1">Cédula de Ciudadanía</option><option value="2">tarjeta de identidad</option><option value="3">Cédula Extranjería</option><option value="7">NIT</option>      </select>
-    </td><td>
-	<strong> Tipo Vehiculo:</strong><br>
-      <select name="tipovehiculo" id="tipovehiculo" required>
-        <option value=1>carro</option>
-        <option value=2>Moto</option>
-    </select>
-    </td></tr>
-    <tr><td>
-	 <strong> Contraseña:</strong><br>
-    <INPUT type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
-       
-        </td><td>
-    <strong>  Confirmar Contraseña:</strong><br>
-     <INPUT type="password" name="contraseña2" id="contraseña2" placeholder="Confirmar Contraseña" required>
-         </td></tr>
-</table>
-
-<table border="2">
-  <caption>Informacion.</caption>
-  <tr>
-    <th>DATOS</th>
-  </tr>
-  <tr>
-    <td>iNGRESAR PLACA: resgitra en base de datos el "ingreso"</td>
-  </tr>
-  <tr>
-    <td>FECHAS: muestra fecha de entrada y hora de parqueo</td>
-  </tr>
-  <tr>
-    <td>REGISTRO NUEVO: registro nuevo de ingreso</td>
-  </tr>
-  <tr>
-    <td>GUARDAR: guarda registro para contabilizacion</td>
-  </tr>
-</table>
-
-</form>
- 
+                <tr><td>Contraseña:<br>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required></td><tr>
+                    
+                <tr><td>Confirmar Contraseña:<br>
+                <INPUT type="password" name="contraseña2" id="contraseña2" placeholder="Confirmar Contraseña" required></td></tr>
+            </table>        
+        </section>
+    </fieldset>
 </body>
-</fieldset>
 </html>
